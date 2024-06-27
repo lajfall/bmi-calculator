@@ -64,7 +64,7 @@ function Calculator() {
             className="text-center"
             placeholder="Weight (KG)"
           />
-          <div className="flex justify-between">
+          <div className="flex mt-2 justify-between">
             <Button
               type="reset"
               className={cn([
@@ -81,7 +81,9 @@ function Calculator() {
         </form>
       </CardContent>
       <CardFooter>
-        <div className="h-10 w-full rounded border-t pt-4">{bmi}</div>
+        <div className="flex h-10 w-full items-center justify-center border-t pt-4">
+          <span className="h-8 w-24 border-b font-semibold">{bmi}</span>
+        </div>
       </CardFooter>
     </Card>
   );
