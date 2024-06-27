@@ -1,12 +1,12 @@
-import { Input } from "@/components/ui/input";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Input } from "./ui/input";
+import { Button, buttonVariants } from "./ui/button";
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "./ui/card";
 import { useState, SyntheticEvent, ChangeEvent } from "react";
 import { cn } from "../lib/utils";
 
