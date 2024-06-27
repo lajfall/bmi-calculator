@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  // base: "/bmi-calculator/",
+  base: "/bmi-calculator/",
   plugins: [react()],
   resolve: {
     alias: {
