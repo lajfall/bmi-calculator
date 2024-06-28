@@ -38,7 +38,7 @@ function Calculator() {
   }
 
   return (
-    <Card className="w-80 text-center">
+    <Card className="w-72 text-center font-mono">
       <CardHeader className="my-2">
         <CardTitle className="tracking-wide">BMI Calculator</CardTitle>
       </CardHeader>
@@ -53,7 +53,7 @@ function Calculator() {
             onChange={handleHeightChange}
             min="1"
             required
-            className="text-center"
+            className="text-center focus-visible:ring-0"
             placeholder="Height (CM)"
           />
           <Input
@@ -61,21 +61,21 @@ function Calculator() {
             onChange={handleWeightChange}
             min="1"
             required
-            className="text-center"
+            className="text-center focus-visible:ring-0"
             placeholder="Weight (KG)"
           />
-          <div className="flex mt-2 justify-between">
+          <div className="mt-2 flex justify-between">
             <Button
               type="reset"
               className={cn([
-                "w-24 uppercase",
+                "w-[108px] font-black",
                 buttonVariants({ variant: "destructive" }),
               ])}
             >
               Reset
             </Button>
-            <Button type="submit" className="w-24 uppercase">
-              Submit
+            <Button type="submit" className="w-[108px] font-bold">
+              Calculate
             </Button>
           </div>
         </form>
